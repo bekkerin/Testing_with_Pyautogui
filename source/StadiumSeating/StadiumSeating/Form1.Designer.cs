@@ -171,6 +171,7 @@ namespace StadiumSeating
             this.txtTotalRevenue.ReadOnly = true;
             this.txtTotalRevenue.Size = new System.Drawing.Size(150, 31);
             this.txtTotalRevenue.TabIndex = 7;
+            this.txtTotalRevenue.TabStop = false;
             // 
             // txtClassCrevenue
             // 
@@ -179,6 +180,7 @@ namespace StadiumSeating
             this.txtClassCrevenue.ReadOnly = true;
             this.txtClassCrevenue.Size = new System.Drawing.Size(150, 31);
             this.txtClassCrevenue.TabIndex = 6;
+            this.txtClassCrevenue.TabStop = false;
             // 
             // txtClassBrevenue
             // 
@@ -187,6 +189,7 @@ namespace StadiumSeating
             this.txtClassBrevenue.ReadOnly = true;
             this.txtClassBrevenue.Size = new System.Drawing.Size(150, 31);
             this.txtClassBrevenue.TabIndex = 5;
+            this.txtClassBrevenue.TabStop = false;
             // 
             // txtClassArevenue
             // 
@@ -195,6 +198,7 @@ namespace StadiumSeating
             this.txtClassArevenue.ReadOnly = true;
             this.txtClassArevenue.Size = new System.Drawing.Size(150, 31);
             this.txtClassArevenue.TabIndex = 4;
+            this.txtClassArevenue.TabStop = false;
             // 
             // label8
             // 

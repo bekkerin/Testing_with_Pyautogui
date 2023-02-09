@@ -12,6 +12,9 @@ namespace StadiumSeating
 {
     public partial class Form1 : Form
     {
+        // global variable for testing
+        bool testing = true;
+
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +22,13 @@ namespace StadiumSeating
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if(testing)
+            {
+                txtClassArevenue.TabStop = true;
+                txtClassBrevenue.TabStop = true;
+                txtClassCrevenue.TabStop = true;
+                txtTotalRevenue.TabStop = true;
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

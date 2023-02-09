@@ -1,9 +1,8 @@
 # load csv data to dictionary https://www.geeksforgeeks.org/load-csv-data-into-list-and-dictionary-using-python/
-# the csv file needs to have a first column with a blank header and then numbers for the first field of each row
-# in Visual Studio, use text boxes to show the output but set them as readonly. That way they can still  be tabbed through.
+# in Visual Studio, use text boxes to show the output but set them as readonly. The TabStop property has been set to True in code.
 
 import pyautogui, time
-import pyperclip # to copy text from the revenue buttons
+import pyperclip # to copy text from the revenue boxes
 from csv import DictReader 
 
 #give the user a chance to kill the script
@@ -11,7 +10,7 @@ print(' 5 second pause to let user press Ctrl-C or to click on the running file 
 time.sleep(5)
 
 with open('tests_with_headers.csv','r') as f: 
-    # number, ticketsA,ticketsB,ticketsC,chargesA,chargesB,chargesC,chargesTotal,message,TestName
+    # ticketsA,ticketsB,ticketsC,chargesA,chargesB,chargesC,chargesTotal,message,TestName
     dict_reader = DictReader(f)
     formData = list(dict_reader)
 
