@@ -16,4 +16,5 @@ The controls have also been supplied with shortcut keys by adding an ampersand (
 
 ## Test scripts
 The first script, test_runner.py, relies on tabbing through the controls with the Tab key. Upon opening the form, focus is on the first text box. The script adds a number and tabs to the next box. Tabbing with the pyautogui.write('\t') and clicking on buttons with pyautogui.press('enter') walks the script through the form.
+
 In the second script, hotkeys are used to advance through the form. For instance, clicking on the Calculate Revenue button is done with pyautogui.hotkey('alt','r').
