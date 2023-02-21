@@ -65,9 +65,9 @@ namespace StadiumSeating
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(54, 46);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Size = new System.Drawing.Size(312, 365);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -84,15 +84,16 @@ namespace StadiumSeating
             // txtClassC
             // 
             this.txtClassC.Location = new System.Drawing.Point(126, 205);
-            this.txtClassC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtClassC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtClassC.Name = "txtClassC";
             this.txtClassC.Size = new System.Drawing.Size(155, 31);
             this.txtClassC.TabIndex = 2;
+            this.txtClassC.TextChanged += new System.EventHandler(this.txtClassC_TextChanged);
             // 
             // txtClassB
             // 
             this.txtClassB.Location = new System.Drawing.Point(126, 159);
-            this.txtClassB.Margin = new System.Windows.Forms.Padding(4);
+            this.txtClassB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtClassB.Name = "txtClassB";
             this.txtClassB.Size = new System.Drawing.Size(155, 31);
             this.txtClassB.TabIndex = 1;
@@ -100,7 +101,7 @@ namespace StadiumSeating
             // txtClassA
             // 
             this.txtClassA.Location = new System.Drawing.Point(126, 112);
-            this.txtClassA.Margin = new System.Windows.Forms.Padding(4);
+            this.txtClassA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtClassA.Name = "txtClassA";
             this.txtClassA.Size = new System.Drawing.Size(155, 31);
             this.txtClassA.TabIndex = 0;
@@ -113,7 +114,7 @@ namespace StadiumSeating
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Class C";
+            this.label4.Text = "Class &C";
             // 
             // label3
             // 
@@ -123,7 +124,7 @@ namespace StadiumSeating
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Class B";
+            this.label3.Text = "Class &B";
             // 
             // label2
             // 
@@ -133,7 +134,7 @@ namespace StadiumSeating
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 25);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Class A";
+            this.label2.Text = "Class &A";
             // 
             // label1
             // 
@@ -156,9 +157,9 @@ namespace StadiumSeating
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(456, 46);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Size = new System.Drawing.Size(312, 365);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -167,6 +168,7 @@ namespace StadiumSeating
             // txtTotalRevenue
             // 
             this.txtTotalRevenue.Location = new System.Drawing.Point(140, 275);
+            this.txtTotalRevenue.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalRevenue.Name = "txtTotalRevenue";
             this.txtTotalRevenue.ReadOnly = true;
             this.txtTotalRevenue.Size = new System.Drawing.Size(150, 31);
@@ -176,6 +178,7 @@ namespace StadiumSeating
             // txtClassCrevenue
             // 
             this.txtClassCrevenue.Location = new System.Drawing.Point(140, 214);
+            this.txtClassCrevenue.Margin = new System.Windows.Forms.Padding(2);
             this.txtClassCrevenue.Name = "txtClassCrevenue";
             this.txtClassCrevenue.ReadOnly = true;
             this.txtClassCrevenue.Size = new System.Drawing.Size(150, 31);
@@ -185,6 +188,7 @@ namespace StadiumSeating
             // txtClassBrevenue
             // 
             this.txtClassBrevenue.Location = new System.Drawing.Point(136, 168);
+            this.txtClassBrevenue.Margin = new System.Windows.Forms.Padding(2);
             this.txtClassBrevenue.Name = "txtClassBrevenue";
             this.txtClassBrevenue.ReadOnly = true;
             this.txtClassBrevenue.Size = new System.Drawing.Size(150, 31);
@@ -194,6 +198,7 @@ namespace StadiumSeating
             // txtClassArevenue
             // 
             this.txtClassArevenue.Location = new System.Drawing.Point(140, 116);
+            this.txtClassArevenue.Margin = new System.Windows.Forms.Padding(2);
             this.txtClassArevenue.Name = "txtClassArevenue";
             this.txtClassArevenue.ReadOnly = true;
             this.txtClassArevenue.Size = new System.Drawing.Size(150, 31);
@@ -243,33 +248,33 @@ namespace StadiumSeating
             // btnCalculate
             // 
             this.btnCalculate.Location = new System.Drawing.Point(124, 440);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(235, 90);
             this.btnCalculate.TabIndex = 1;
-            this.btnCalculate.Text = "Calculate Revenue";
+            this.btnCalculate.Text = "Calculate &Revenue";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // btnClear
             // 
             this.btnClear.Location = new System.Drawing.Point(398, 440);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(206, 90);
             this.btnClear.TabIndex = 8;
-            this.btnClear.Text = "Clear";
+            this.btnClear.Text = "C&lear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(678, 440);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(171, 90);
             this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -283,7 +288,7 @@ namespace StadiumSeating
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Stadium Seating";
             this.Load += new System.EventHandler(this.Form1_Load);

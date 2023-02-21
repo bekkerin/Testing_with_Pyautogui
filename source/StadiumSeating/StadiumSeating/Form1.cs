@@ -85,5 +85,10 @@ namespace StadiumSeating
                 lblMessage.Text = error.Message;
             }
         }
+
+        private void txtClassC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
