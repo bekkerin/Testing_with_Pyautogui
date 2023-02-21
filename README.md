@@ -12,9 +12,6 @@ The program to be tested is written in Visual C# and Visual Studio is the easies
 
 ## Test application
 The application is Stadium Seating, a slight modification from an exercise in the Visual C# textbook xxxxxx. The controls have been renamed with Hungarian notation (txtClassA for the number of Class A tickets for instance). For testing purposed, the text boxes for the outcome of the calculations, which are normally set to ReadOnly and TabStop false, have been set to TabStop True so they can be tested. The Tab sequence has been set to classA, classB, ClassC, Calculate, revenueA, revenueB, revenueC, totalRevenu, Clear, and Exit. Upon Clear, the focus shifts automatically back to classA. 
-The controls have also been supplied with shortcut keys by adding an ampersand (&) to the text properties and setting the form's KeyPreview property to True. 
 
-## Test scripts
+## Test script
 The first script, test_runner.py, relies on tabbing through the controls with the Tab key. Upon opening the form, focus is on the first text box. The script adds a number and tabs to the next box. Tabbing with the pyautogui.write('\t') and clicking on buttons with pyautogui.press('enter') walks the script through the form.
-
-In the second script, hotkeys are used to advance through the form. For instance, clicking on the Calculate Revenue button is done with pyautogui.hotkey('alt','r').
