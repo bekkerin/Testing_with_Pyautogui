@@ -33,7 +33,7 @@ These three steps can also be chained as follows:
 * Screen captures may work better if you use larger rectangles. For instance, capture not only a button but also the surrounding area. As long as you keep the center of the image over the clickable area, clicking will work.
 * Use .png files rather than .jpg file. They appear to do better.
 * Image recognition may take some time. Consider using your own custom variable delay with something like 
-'''
+```
 while pyautogui.locateOnScreen('square.png') is None:
         pyautogui.PAUSE = 0.5
-'''
+```
