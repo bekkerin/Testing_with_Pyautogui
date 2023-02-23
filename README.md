@@ -15,6 +15,16 @@ The application is Stadium Seating, a slight modification from an exercise in th
 
 ## Test script 1
 The first script,test_runner.py, in the folder "testing", relies on tabbing through the controls with the Tab key. Upon opening the form, focus is on the first text box. The script adds a number and tabs to the next box. Tabbing with the pyautogui.write('\t') and clicking on buttons with pyautogui.press('enter') walks the script through the form.
+Some useful methods:
+* pyautogui.write("Bekkering", interval = 0.1) - writes my name to the current control with slight delay between key strokes
+* pyautogui.press('space') - press a single keyboard key like space, enter, winleft, etc
+* pyautogui.hotkey('ctrl','f4') - hotkey combinations for ctrl, alt, shift, etc.
+You can find a complete listing at [chapter 20](https://automatetheboringstuff.com/2e/chapter20/)
+The pyperclip mocule allows you to copy content to the clipboard. For instance, find a control and set focus on it. 
+* pyautogui.hotkey('ctrl','a') - selects all content in the current control
+* pyautogui.hotkey('ctrl','c') - copies content to the clipboard
+* content = pyperclip.paste() - assigns content of clipboard to content
+You can find a description of the pyperclip module at [chapter 6](https://automatetheboringstuff.com/2e/chapter6/) 
 
 ## Test script 2
 The second scrit, nsu_webpage.py, is in the folder "testing02". In this script, we work with optical recognition. The first method to use is .locateOnScreen(picture). This returns the location of the screencapture with four integers: top, left, width, and height. The next method, .center(tuple), uses this tuple to locate the center of the picture with two integers for left and right. This location can then be clicked, selected, or otherwise used. 
