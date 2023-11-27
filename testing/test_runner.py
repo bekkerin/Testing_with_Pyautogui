@@ -9,9 +9,8 @@ import os
 executable_path = "C:\\Temp\\Testing_with_Pyautogui-main\\Testing_with_Pyautogui-main\\source\\StadiumSeating\\StadiumSeating\\bin\\Debug\\netcoreapp3.1\\StadiumSeating.exe"
 os.startfile(executable_path)
 
-#give the user a chance to kill the script
-print(' 5 second pause to let user press Ctrl-C or to click on the running file to make the window active ')
-time.sleep(5)
+#give the program time to  open
+time.sleep(1)
 
 with open('tests_with_headers.csv','r') as f: 
     # ticketsA,ticketsB,ticketsC,chargesA,chargesB,chargesC,chargesTotal,message,TestName
