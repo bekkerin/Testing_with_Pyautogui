@@ -6,13 +6,16 @@ import pyperclip # to copy text from the revenue boxes
 from csv import DictReader 
 import os
 
-executable_path = "C:\\Temp\\Testing_with_Pyautogui-main\\Testing_with_Pyautogui-main\\source\\StadiumSeating\\StadiumSeating\\bin\\Debug\\netcoreapp3.1\\StadiumSeating.exe"
+
+
+executable_path = "C:\\Users\\ernst\\OneDrive\\Desktop\\Github\\Testing_with_Pyautogui\\testing\\source\\StadiumSeating\\StadiumSeating\\bin\\Debug\\netcoreapp3.1\\StadiumSeating.exe"
+file_with_tests = "C:\\Users\\ernst\\OneDrive\\Desktop\\Github\\Testing_with_Pyautogui\\testing\\tests_with_headers.csv"
 os.startfile(executable_path)
 
 #give the program time to  open
 time.sleep(1)
 
-with open('tests_with_headers.csv','r') as f: 
+with open(file_with_tests,'r') as f: 
     # ticketsA,ticketsB,ticketsC,chargesA,chargesB,chargesC,chargesTotal,message,TestName
     dict_reader = DictReader(f)
     formData = list(dict_reader)
